@@ -39,6 +39,78 @@
 2. Body and some general stuff
 *********************************/
 
+/*Just*/
+
+	/*custom font for text*/
+	@import url('http://fonts.googleapis.com/css?family=Nunito');
+
+	/*Basic reset*/
+	 * {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		background: #4EB889;
+		font-family: Nunito, arial, verdana;
+	}
+	#vertical-menu {
+		background: #004050;
+		width: 250px;
+		margin: 100px auto 0 auto;
+		color: white;
+		/*box-shadow: 
+			0 5px 15px 1px rgba(0, 0, 0, 0.6), 
+			0 0 200px 1px rgba(255, 255, 255, 0.5);*/
+	}
+	/*heading styles*/
+	 #vertical-menu h3 {
+		font-size: 12px;
+		line-height: 34px;
+		padding: 0 10px;
+		cursor: pointer;
+		/*fallback for browsers not supporting gradients*/
+		background: #003040;
+		background: linear-gradient(#003040, #002535);
+	}
+	/*heading hover effect*/
+	 #vertical-menu h3:hover {
+		text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+	}
+	/*iconfont styles*/
+	 #vertical-menu h3 span {
+		font-size: 16px;
+		margin-right: 10px;
+	}
+	/*list items*/
+	 #vertical-menu li {
+		list-style-type: none;
+	}
+	/*links*/
+	 #vertical-menu ul ul li a {
+		color: white;
+		text-decoration: none;
+		font-size: 11px;
+		line-height: 27px;
+		display: block;
+		padding: 0 15px;
+		/*transition for smooth hover animation*/
+		transition: all 0.15s;
+	}
+	/*hover effect on links*/
+	 #vertical-menu ul ul li a:hover {
+		background: #003545;
+		/*border-left: 5px solid lightgreen;*/
+	}
+	/*Lets hide the non active LIs by default*/
+	 #vertical-menu ul ul {
+		display: none;
+	}
+	#vertical-menu li.active ul {
+		display: block;
+	}	
+
+/*Just Close*/
+
 *
 {
 	margin: 0;
@@ -818,6 +890,9 @@ section
 	font-weight: 700;
 	line-height: 1.2;
 	color: #384158;
+	position: absolute;
+	bottom: 180px;
+	left: 96px;
 }
 .home_slider_subtitle
 {
@@ -830,6 +905,30 @@ section
 	width: 832px;
 	margin: 0 auto;
 	margin-top: 35px;
+}
+hr {
+    display: block;
+	height: 1px;
+	width: 10%;
+    border: 0;
+    border-top: 5px solid #384158;
+    margin: 1em 0;
+    padding: 0;
+}
+.str{
+	width: auto;
+    height: 70px;
+    margin-left: 125px;
+}
+.tsr{
+	text-align: justify;
+}
+.trs{
+	margin-top: 20px;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #384158;
 }
 .home_search_form div
 {
